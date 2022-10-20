@@ -52,7 +52,7 @@
         <layoutConstraint xsi:type="notation:Bounds" xmi:id="_O6PnZAClEea895739UzP5A"/>
       </children>
       <styles xsi:type="notation:StringValueStyle" xmi:id="_w97D8ACsEea895739UzP5A" name="featureToShow" stringValue="specification"/>
-      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_O6PnZQClEea895739UzP5A" x="10" y="10" width="336" height="596"/>
+      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_O6PnZQClEea895739UzP5A" x="10" y="10" width="276" height="595"/>
     </children>
     <children xmi:id="__n-YQFBkEe2G2_k3HQO2nQ" type="Region" element="__n_mYFBkEe2G2_k3HQO2nQ">
       <children xsi:type="notation:DecorationNode" xmi:id="__n-YQVBkEe2G2_k3HQO2nQ" type="RegionName">
@@ -140,7 +140,7 @@
         <layoutConstraint xsi:type="notation:Bounds" xmi:id="__n-Yf1BkEe2G2_k3HQO2nQ"/>
       </children>
       <styles xsi:type="notation:ShapeStyle" xmi:id="__n-YgFBkEe2G2_k3HQO2nQ" fontName="Verdana" fillColor="15790320" lineColor="12632256"/>
-      <layoutConstraint xsi:type="notation:Bounds" xmi:id="__n-YgVBkEe2G2_k3HQO2nQ" y="3" width="516" height="276"/>
+      <layoutConstraint xsi:type="notation:Bounds" xmi:id="__n-YgVBkEe2G2_k3HQO2nQ" x="290" y="10" width="516" height="276"/>
     </children>
     <children xmi:id="_D-6xQFCPEe2cA9moxCRD8A" type="Region" element="_D-7YUFCPEe2cA9moxCRD8A">
       <children xsi:type="notation:DecorationNode" xmi:id="_D-6xQVCPEe2cA9moxCRD8A" type="RegionName">
@@ -253,10 +253,10 @@
         <layoutConstraint xsi:type="notation:Bounds" xmi:id="_D-6xkVCPEe2cA9moxCRD8A"/>
       </children>
       <styles xsi:type="notation:ShapeStyle" xmi:id="_D-6xklCPEe2cA9moxCRD8A" fontName="Verdana" fillColor="16448250" lineColor="12632256"/>
-      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_D-6xk1CPEe2cA9moxCRD8A" x="520" y="2" width="306" height="530"/>
+      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_D-6xk1CPEe2cA9moxCRD8A" x="811" y="10" width="306" height="530"/>
     </children>
     <styles xsi:type="notation:DiagramStyle" xmi:id="_O4nPsQClEea895739UzP5A"/>
-    <styles xsi:type="notation:BooleanValueStyle" xmi:id="_605H0CuJEeiIGeIuy-9ybQ" name="inlineDefinitionSection"/>
+    <styles xsi:type="notation:BooleanValueStyle" xmi:id="_605H0CuJEeiIGeIuy-9ybQ" name="inlineDefinitionSection" booleanValue="true"/>
     <edges xmi:id="__oDQwFBkEe2G2_k3HQO2nQ" type="Transition" element="__oA0hVBkEe2G2_k3HQO2nQ" source="__n-YaVBkEe2G2_k3HQO2nQ" target="__n-YUVBkEe2G2_k3HQO2nQ">
       <children xsi:type="notation:DecorationNode" xmi:id="__oDQwVBkEe2G2_k3HQO2nQ" type="TransitionExpression">
         <styles xsi:type="notation:ShapeStyle" xmi:id="__oDQwlBkEe2G2_k3HQO2nQ"/>
