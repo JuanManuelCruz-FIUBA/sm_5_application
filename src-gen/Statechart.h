@@ -11,6 +11,7 @@ class Statechart;
 
 #include "../modules/leds/leds.h"
 #include "../modules/buttons/buttons.h"
+#include "../arm_book_lib.h"
 #include <deque>
 #include "sc_types.h"
 #include "sc_statemachine.h"

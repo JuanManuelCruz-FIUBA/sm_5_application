@@ -42,10 +42,11 @@ void smTick(void)
     smTickFlag = true;
 }
 
-uint32_t buttonStatus;
  
 int main()
 {
+    int buttonStatus;
+    
 	/*! Sets the timer service */
 	sm->setTimerService( timerService );
 

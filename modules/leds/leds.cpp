@@ -33,9 +33,13 @@ void opLedUpdate()
     led1 = !led1;
 }
 
-bool opLedRead()
+int OpLedRead()
 {
-    return led1;
+    return led1.read();
 }
 
+void opLedWrite( int value )
+{
+    led1.write( value );
+}
 //=====[Implementations of private functions]==================================

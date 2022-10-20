@@ -298,7 +298,7 @@ void Statechart::enact_IdleBlink_BLINK_Blink_Turn_OFF()
 {
 	/* Entry action for state 'Turn_OFF'. */
 	timerService->setTimer(this, (sc_eventid)(&timeEvents[1]), 750, false);
-	opLedUpdate();
+	opLedWrite(OFF);
 	viMyCounter++;
 }
 
@@ -307,7 +307,7 @@ void Statechart::enact_IdleBlink_BLINK_Blink_Turn_ON()
 {
 	/* Entry action for state 'Turn_ON'. */
 	timerService->setTimer(this, (sc_eventid)(&timeEvents[2]), 250, false);
-	opLedUpdate();
+	opLedWrite(ON);
 	viMyCounter++;
 }
 

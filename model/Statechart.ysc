@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:sgraph="http://www.yakindu.org/sct/sgraph/2.0.0">
-  <sgraph:Statechart xmi:id="_O39IYAClEea895739UzP5A" specification="// Use the event driven execution model.&#xA;// Switch to cycle based behavior&#xA;// by specifying '@CycleBased(200)'.&#xA;@EventDriven&#xD;&#xA;&#xD;&#xA;// Use @SuperSteps(yes) to enable&#xA;// super step semantics.&#xA;@SuperSteps(no)&#xD;&#xA;&#xD;&#xA;import : &quot;../modules/leds/leds.h&quot;&#xD;&#xA;import : &quot;../modules/buttons/buttons.h&quot;&#xD;&#xA;&#xD;&#xA;interface:&#xD;&#xA;&#x9;// Define events and variables here. &#xA;&#x9;// Use CTRL + Space for content assist.&#xA;&#x9;in event evButtonUnpressed&#xD;&#xA;&#x9;in event evButtonPressed: uint32_t&#xD;&#xA;&#xD;&#xA;internal:&#x9;&#xD;&#xA;&#x9;var viMyCounter: uint32_t&#xD;&#xA;&#x9;var viTecla: uint32_t&#xD;&#xA;&#x9;&#xA;&#x9;event siIdelBlink" name="Statechart" domainID="com.yakindu.domain.c">
+  <sgraph:Statechart xmi:id="_O39IYAClEea895739UzP5A" specification="// Use the event driven execution model.&#xA;// Switch to cycle based behavior&#xA;// by specifying '@CycleBased(200)'.&#xA;@EventDriven&#xD;&#xA;&#xD;&#xA;// Use @SuperSteps(yes) to enable&#xA;// super step semantics.&#xA;@SuperSteps(no)&#xD;&#xA;&#xD;&#xA;import : &quot;../modules/leds/leds.h&quot;&#xD;&#xA;import : &quot;../modules/buttons/buttons.h&quot;&#xD;&#xA;import : &quot;../arm_book_lib.h&quot;&#xA;&#xD;&#xA;interface:&#xD;&#xA;&#x9;// Define events and variables here. &#xA;&#x9;// Use CTRL + Space for content assist.&#xA;&#x9;in event evButtonUnpressed&#xD;&#xA;&#x9;in event evButtonPressed: uint32_t&#xD;&#xA;&#xD;&#xA;internal:&#x9;&#xD;&#xA;&#x9;var viMyCounter: uint32_t&#xD;&#xA;&#x9;var viTecla: uint32_t&#xD;&#xA;&#x9;&#xA;&#x9;event siIdelBlink" name="Statechart" domainID="com.yakindu.domain.c">
     <regions xmi:id="__n_mYFBkEe2G2_k3HQO2nQ" name="Button">
       <vertices xsi:type="sgraph:State" xmi:id="__n_mYVBkEe2G2_k3HQO2nQ" specification="" name="DEBOUNCE" incomingTransitions="_qAhXkFB4Ee2G2_k3HQO2nQ">
         <outgoingTransitions xmi:id="__n_mY1BkEe2G2_k3HQO2nQ" specification="after 100 ms" target="__oA0hlBkEe2G2_k3HQO2nQ"/>
@@ -23,10 +23,10 @@
       <vertices xsi:type="sgraph:State" xmi:id="_D-7YUVCPEe2cA9moxCRD8A" name="BLINK" incomingTransitions="_D-8meFCPEe2cA9moxCRD8A">
         <outgoingTransitions xmi:id="_D-7YU1CPEe2cA9moxCRD8A" specification="siIdelBlink" target="_D-8mdlCPEe2cA9moxCRD8A"/>
         <regions xmi:id="_D-7_ZVCPEe2cA9moxCRD8A" name="Blink">
-          <vertices xsi:type="sgraph:State" xmi:id="_D-7_ZlCPEe2cA9moxCRD8A" specification="entry / &#xD;&#xA;opLedUpdate();&#xD;&#xA;viMyCounter++" name="Turn_OFF" incomingTransitions="_D-7_fVCPEe2cA9moxCRD8A">
+          <vertices xsi:type="sgraph:State" xmi:id="_D-7_ZlCPEe2cA9moxCRD8A" specification="entry / &#xD;&#xA;opLedWrite( OFF );&#xD;&#xA;viMyCounter++" name="Turn_OFF" incomingTransitions="_D-7_fVCPEe2cA9moxCRD8A">
             <outgoingTransitions xmi:id="_D-7_b1CPEe2cA9moxCRD8A" specification="after 750 ms" target="_D-7_dFCPEe2cA9moxCRD8A"/>
           </vertices>
-          <vertices xsi:type="sgraph:State" xmi:id="_D-7_dFCPEe2cA9moxCRD8A" specification="entry / &#xD;&#xA;opLedUpdate();&#xD;&#xA;viMyCounter++" name="Turn_ON" incomingTransitions="_D-7_b1CPEe2cA9moxCRD8A _D-8mdVCPEe2cA9moxCRD8A">
+          <vertices xsi:type="sgraph:State" xmi:id="_D-7_dFCPEe2cA9moxCRD8A" specification="entry / &#xD;&#xA;opLedWrite( ON );&#xD;&#xA;viMyCounter++" name="Turn_ON" incomingTransitions="_D-7_b1CPEe2cA9moxCRD8A _D-8mdVCPEe2cA9moxCRD8A">
             <outgoingTransitions xmi:id="_D-7_fVCPEe2cA9moxCRD8A" specification="after 250 ms" target="_D-7_ZlCPEe2cA9moxCRD8A"/>
           </vertices>
           <vertices xsi:type="sgraph:Entry" xmi:id="_D-8mdFCPEe2cA9moxCRD8A">
